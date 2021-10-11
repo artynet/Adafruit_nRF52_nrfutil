@@ -57,7 +57,7 @@ jobs:
         cd nordicsemi
         pyinstaller __main__.py --onefile --clean --name adafruit-nrfutil
         cd dist
-        7z a -tzip ../../adafruit-nrfutil--${{ github.event.release.tag_name }}-macos.zip adafruit-nrfutil
+        7z a -tzip ../../adafruit-nrfutil--${{ github.event.release.tag_name }}-linux.zip adafruit-nrfutil
 
     - name: Upload Release Asset
       uses: actions/upload-release-asset@v1
